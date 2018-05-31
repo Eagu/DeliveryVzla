@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test1.Views.LoginPage"
+             BackgroundColor="Navy">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Grid.Row="1"
+                   Grid.Column="1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Source="logo.png"/>
+
+            <Entry x:Name="EntryUsername"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Center"
+                   TextColor="White"
+                   PlaceholderColor="White"
+                   Placeholder="Username"/>
+
+            <Entry x:Name="EntryPassword"
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   HorizontalOptions="Fill"
+                   VerticalOptions="Center"
+                   TextColor="White"
+                   PlaceholderColor="White"
+                   Placeholder="Password"
+                   IsPassword="True"/>
+
+            <StackLayout Grid.Row="4"
+                         Grid.Column="1"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="Fill">
+
+                <Button x:Name="ButtonLogin"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="Login"
+                        Clicked="ButtonLogin_Clicked"/>
+                
+                <Button x:Name="ButtonSignUp"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        HeightRequest="40"
+                        WidthRequest="200"
+                        BackgroundColor="Transparent"
+                        BorderWidth="0"
+                        Text="Don't have an account? Sign up"
+                        TextColor="White"
+                        Clicked="ButtonSignUp_Clicked"/>                
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test1.Views.CategoryPage"
+             Title="Categories">
+    
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Row="0"
+                   Grid.Column="0"
+                   Padding="0">
+
+                <Grid>
+                    <Image Source="pizza.png"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="Center"/>
+
+                    <BoxView x:Name="BoxViewPizza"
+                             HorizontalOptions="Fill"
+                             VerticalOptions="Fill"
+                             BackgroundColor="Black"
+                             Opacity="0.5"/>
+
+                    <Label HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Text="Pizzas"
+                           TextColor="White"
+                           FontSize="Medium"/>
+                </Grid>
+            </Frame>
+
+            <Frame Grid.Row="0"
+                   Grid.Column="1"
+                   Padding="0">
+
+                <Grid>
+                    <Image Source="taco1.jpg"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand"/>
+
+                    <BoxView x:Name="BoxViewTaco"
+                             HorizontalOptions="Fill"
+                             VerticalOptions="Fill"
+                             BackgroundColor="Black"
+                             Opacity="0.5"/>
+
+                    <Label HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Text="Mexicana"
+                           TextColor="White"
+                           FontSize="Medium"/>
+                </Grid>
+            </Frame>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
